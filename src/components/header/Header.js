@@ -8,6 +8,7 @@ const Header = () => {
             <h2 className="header_title">FORTY</h2>
             <h2 className="header_under"> MENU ...</h2>
             <img src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" alt=""/>
+            <img src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" alt=""/>
         </section>
      );
 }
