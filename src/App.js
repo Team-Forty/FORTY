@@ -9,7 +9,6 @@ function App() {
 
     <div className="App">
 
-      <h1>Project FORTY</h1>
       <Header/>
       <Main/>
       <Footer/>

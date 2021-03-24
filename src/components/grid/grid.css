@@ -1,0 +1,119 @@
+/*=============================
+        General-Styles
+==============================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px 5% 0px 5%;
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat";
+}
+
+/*=============================
+        Header-Styles
+==============================*/
+.grid_header {
+  padding: 10px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+}
+.grid_header .grid_header_menu {
+  display: flex;
+  align-items: center;
+}
+.grid_header .grid_header_menu .grid_header_container span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-left: 5px;
+}
+.grid_header .grid_header_menu .grid_header_container span:first-child {
+  margin-bottom: 5px;
+}
+.grid_header .grid_header_menu .grid_header_container span:nth-of-type(2) {
+  margin-bottom: 5px;
+}
+
+/*=============================
+        Search-Styles
+==============================*/
+.grid_main_search {
+  margin-top: 50px;
+  padding: 10px 0px;
+  text-align: center;
+}
+.grid_main_search label {
+  margin-right: 10px;
+  background: pink;
+  padding: 10px 25px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-style: italic;
+}
+.grid_main_search input {
+  padding: 5px;
+}
+
+/*=============================
+        Grid-Card-Styles
+==============================*/
+.grid_main_cards {
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.grid_main_cards .grid_main_card_placeholder {
+  padding: 2%;
+  display: flex;
+  border: 1px solid #fff;
+}
+.grid_main_cards .grid_main_card_placeholder img {
+  width: 50%;
+}
+.grid_main_cards .grid_main_card_placeholder .grid_main_card_description {
+  margin: 0 auto;
+  text-align: center;
+}
+.grid_main_cards .grid_main_card_placeholder .grid_main_card_description h3 {
+  padding-top: 10%;
+  font-size: 54px;
+}
+.grid_main_cards .grid_main_card_placeholder .grid_main_card_description button {
+  margin-top: 100%;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 24px;
+  font-style: italic;
+  background: pink;
+}
+
+/*=============================
+        Footer-Styles
+==============================*/
+.grid_footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  padding: 10px 0px;
+  margin-top: 50px;
+}
+.grid_footer p {
+  font-size: 24px;
+}
+.grid_footer .grid_footer_icons img {
+  padding: 0px 10px;
+  width: 50px;
+}
+
+/*# sourceMappingURL=grid.css.map */
