@@ -16,8 +16,10 @@ const Header = () => {
                     <span></span>
                 </div>
             </div>
-            <img src={HeaderImg} alt="" />
-            <h1>The Home Of Fine Drinking</h1>
+            <figure>
+                <img src={HeaderImg} alt="" />
+                <figcaption><h1>Home Of Fine Drinking</h1></figcaption>
+            </figure>
         </header>
     );
 }

@@ -1,5 +1,8 @@
 import React from 'react';
 import "./Footer.css";
+import Insta from '../data/img/iconfinder_1_Instagram_colored_svg_1_5296765 1.svg'
+import Twitter from '../data/img/iconfinder_1_Twitter_colored_svg_5296514 1.svg'
+import Facebook from '../data/img/iconfinder_1_Facebook_colored_svg_copy_5296499 1.svg'
 
 
 
@@ -7,24 +10,13 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <section className="Footer">
-            {/* <div className="main center">
-                <div className="icon-box center">
-                    <i className="fab fa-instagram fa-3x"></i>
-                </div>
-                <div className="inner-box center"><p>Instagram</p></div>
+            <h3>Copyright by Simon, Steffen, Önder</h3>
+            <div>
+                <img src={Insta} alt="" />
+                <img src={Twitter} alt="" />
+                <img src={Facebook} alt="" />
             </div>
-            <div className="box">
-                <div className="icon-box center ib-t">
-                    <i className="fab fa-twitter fa-3x"></i>
-                </div>
-                <div className="inner-box center"><p>Twitter</p></div>
-            </div>
-            <div className="box">
-                <div className="icon-box center ib-f ">
-                    <i className="fab fa-facebook fa-3x"></i>
-                </div>
-                <div className="inner-box center"><p>Facebook</p></div>
-            </div> */}
+
         </section>
     );
 }
