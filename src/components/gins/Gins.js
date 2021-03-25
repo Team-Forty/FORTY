@@ -17,14 +17,15 @@ const Gins = () => {
         console.log(items);
         console.log(items.drinks);
         console.log(items.drinks[0].idDrink);
-        console.log(items.drinks[0].strDrinkThumb);
+        //console.log(items.drinks[0].strDrinkThumb);
         // console.log(items[0].idDrink);
+        
     }
 
     return (
         <section className="grid_main_cards">
-            {items.map(item => (
-                <Link style={{ color: "white" , textDecoration: "none"}} to={`/gins/${item.idDrink}`}>
+            {items.map((item, i) => (
+                <Link key={i} style={{ color: "white" , textDecoration: "none"}} to={`/gins/${item.idDrink}`}>
                     <div className="grid_main_card_placeholder">
                         <img src={item.strDrinkThumb} alt="" />
                             <div className="grid_main_card_description">
