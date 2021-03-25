@@ -38,9 +38,8 @@ function App() {
 
       </Switch>
 
-      {/* <Header />
-        <Main />
-        <Footer /> */}
+      
+        <Footer />
 
 
 

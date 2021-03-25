@@ -7,7 +7,7 @@ const Drink = ({ match }) => {
 
     useEffect(() => {
         fetchItem();
-    }, [])
+    })
 
 
     const [item, setItem] = useState({});

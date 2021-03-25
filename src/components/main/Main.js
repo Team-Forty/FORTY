@@ -4,7 +4,6 @@ import GinImg from '../data/img/jez-timms-J7J0oTps4Lo-unsplash.jpg'
 import VodkaImg from '../data/img/mae-mu-T7heq8rawkc-unsplash.jpg'
 import NoAlcImg from '../data/img/nikita-tikhomirov-roMo1sOj8q8-unsplash.jpg'
 import RumImg from '../data/img/melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg'
-import Header from '../header/Header';
 
 //! changes imports:
 import { Link } from 'react-router-dom';
