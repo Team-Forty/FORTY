@@ -9,10 +9,10 @@ function App() {
 
     <div className="App">
 
-      <Header />
-      <Main />
-      <Footer />
-      <TestApi />
+      <Header/>
+      <Main/>
+      <Footer/>
+      
 
     </div>
 

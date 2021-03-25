@@ -1,5 +1,4 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive'
 import "./Main.css";
 import GinImg from '../data/img/jez-timms-J7J0oTps4Lo-unsplash.jpg'
 import VodkaImg from '../data/img/mae-mu-T7heq8rawkc-unsplash.jpg'
@@ -7,16 +6,6 @@ import NoAlcImg from '../data/img/nikita-tikhomirov-roMo1sOj8q8-unsplash.jpg'
 import RumImg from '../data/img/melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg'
 
 const Main = () => {
-    const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-device-width: 1224px)'
-    })
-    const isBigScreen = useMediaQuery({ query: '(min-device-width: 1824px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-    const isTabletOrMobileDevice = useMediaQuery({
-        query: '(max-device-width: 1224px)'
-    })
-    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-    const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
     return (
         <section className="main">
             <h1>Choose your favorite spirit:</h1>

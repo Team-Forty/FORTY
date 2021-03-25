@@ -16,7 +16,7 @@
     width:100%;
 }
 .header h1{
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 400;
     margin: 0;
     letter-spacing: 3px;
@@ -41,6 +41,50 @@
 figcaption{
     padding:10% 0 10% 0;
 }
-/* @media (min-width: 768px){
 
-} */
+@media (max-width: 414px){
+    .header{
+        display:flex;
+        justify-content: space-between;
+        align-items:baseline;
+    }
+    .header_menu h1{
+        display:none;
+    }
+    .header > figure > figcaption > h1{
+        font-size:25px;
+        font-weight: 500;
+    }
+    
+}
+
+@media (max-width: 375px){
+    .header{
+        display:flex;
+        justify-content: space-between;
+        align-items:baseline;
+    }
+    .header_menu h1{
+        display:none;
+    }
+    .header > figure > figcaption > h1{
+        font-size:23px;
+        font-weight: 400;
+    }
+}
+
+
+@media (max-width: 320px){
+    .header{
+        display:flex;
+        justify-content: space-between;
+        align-items:baseline;
+    }
+    .header_menu h1{
+        display:none;
+    }
+    .header > figure > figcaption > h1{
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
