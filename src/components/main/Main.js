@@ -31,7 +31,6 @@ const Main = () => {
                     </div>
                 </Link>
 
-
                 <h1>Can we inspire you?</h1>
                 <form action="">
                     <input type="text" />

@@ -24,3 +24,12 @@ body{
         }
     }
 }
+
+@media only screen and (max-width: 375px){
+    .drink_card_big{
+        display: block;
+        img{
+            width: 95%;
+        }
+    }
+}

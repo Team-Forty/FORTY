@@ -25,4 +25,13 @@ body {
   padding-top: 5px;
 }
 
+@media only screen and (max-width: 375px) {
+  .drink_card_big {
+    display: block;
+  }
+  .drink_card_big img {
+    width: 95%;
+  }
+}
+
 /*# sourceMappingURL=drink.css.map */

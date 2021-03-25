@@ -69,7 +69,7 @@ body {
   padding-top: 3%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 .grid_main_cards .grid_main_card_placeholder {
   padding: 2%;
@@ -80,22 +80,15 @@ body {
   width: 50%;
 }
 .grid_main_cards .grid_main_card_placeholder .grid_main_card_description {
+  padding: 1%;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .grid_main_cards .grid_main_card_placeholder .grid_main_card_description h3 {
-  padding-top: 10%;
-  font-size: 54px;
-}
-.grid_main_cards .grid_main_card_placeholder .grid_main_card_description button {
-  margin-top: 100%;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 24px;
-  font-style: italic;
-  background: pink;
+  font-size: 36px;
+  font-weight: 400;
 }
 
 /*=============================
@@ -114,6 +107,38 @@ body {
 .grid_footer .grid_footer_icons img {
   padding: 0px 10px;
   width: 50px;
+}
+
+/*=============================
+        Media-Styles
+==============================*/
+@media only screen and (max-width: 375px) {
+  /*=============================
+      Grid-Card-Styles
+  ==============================*/
+  .grid_main_cards {
+    padding-top: 3%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .grid_main_cards .grid_main_card_placeholder {
+    padding: 5% 2%;
+    display: block;
+    border: 1px solid #fff;
+  }
+  .grid_main_cards .grid_main_card_placeholder img {
+    width: 90%;
+  }
+  .grid_main_cards .grid_main_card_placeholder .grid_main_card_description {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .grid_main_cards .grid_main_card_placeholder .grid_main_card_description h3 {
+    font-size: 36px;
+    font-weight: 400;
+  }
 }
 
 /*# sourceMappingURL=grid.css.map */
