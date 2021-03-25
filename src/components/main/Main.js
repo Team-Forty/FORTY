@@ -4,16 +4,34 @@ import GinImg from '../data/img/jez-timms-J7J0oTps4Lo-unsplash.jpg'
 import VodkaImg from '../data/img/mae-mu-T7heq8rawkc-unsplash.jpg'
 import NoAlcImg from '../data/img/nikita-tikhomirov-roMo1sOj8q8-unsplash.jpg'
 import RumImg from '../data/img/melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg'
+import Header from '../header/Header';
+
+//! changes imports:
+import { Link } from 'react-router-dom';
+
+
 
 const Main = () => {
     return (
         <section className="main">
             <h1>Choose your favorite spirit:</h1>
             <div className="main_grid">
-                <img src={GinImg} alt="" />
-                <h1>GIN</h1>
-                <h1>VODKA</h1>
-                <img src={VodkaImg} alt="" />
+
+                <Link to="/gins" >
+                    <div className="main_link" >
+                        <img src={GinImg} alt="" />
+                        <h1>GIN</h1>
+                    </div>
+                </Link>
+
+                <Link to="/vodka">
+                    <div className="main_link">
+                        <h1>VODKA</h1>
+                        <img src={VodkaImg} alt="" />
+                    </div>
+                </Link>
+
+
                 <h1>Can we inspire you?</h1>
                 <form action="">
                     <input type="text" />
@@ -21,10 +39,23 @@ const Main = () => {
                     <br></br>
                     <label htmlFor="">Search your favorite</label>
                 </form>
-                <h1>NON-<br></br>ALCOHOLIC</h1>
-                <img src={NoAlcImg} alt="" />
-                <img src={RumImg} alt="" />
-                <h1>RUM</h1>
+                <Link to="/non_alcoholic">
+                    <div className="main_link">
+                        <h1>NON-<br></br>ALCOHOLIC</h1>
+                        <img src={NoAlcImg} alt="" />
+                    </div>
+                </Link>
+                <Link to="/rum">
+                    <div className="main_link">
+                        <img src={RumImg} alt="" />
+                        <h1>RUM</h1>
+                    </div>
+                </Link>
+
+
+
+
+
             </div>
             <article className="main_article">
                 <h2>Genuss hat viele Facetten <span></span></h2>

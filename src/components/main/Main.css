@@ -187,3 +187,27 @@ label{
     }
 }
 
+
+/**********  */
+/**********  */
+/**********      Kurze Korrektur zu dem Link (zuerst nur Gins)  */
+/**********  */
+/**********  */
+
+.main_link{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    transition: all .7s;
+}
+
+.main_link:hover{
+    box-shadow: rgba(211, 23, 54, 0.1) 0px 8px 24px, rgba(230, 9, 27, 0.1) 0px 16px 56px, rgba(223, 12, 117, 0.1) 0px 24px 80px;
+}
+
+.main_link h1 {
+    color:red;
+    text-decoration: underline;
+}
+
+
