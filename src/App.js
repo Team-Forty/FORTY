@@ -11,7 +11,7 @@ import Non_alcoholic from './components/non_alcoholic/Non_alcoholic';
 import Rum from './components/rum/Rum';
 import Drink from './components/drink/Drink';
 
-    // ! changes to Links  overwirking completely the body of App
+// ! changes to Links  overwirking completely the body of App
 
 
 function App() {
@@ -20,29 +20,30 @@ function App() {
 
     <div className="App">
 
-      <Header/>
+      <Header />
 
       <Switch>
 
-        <Route exact path="/" component={Main}/>
+        <Route exact path="/" component={Main} />
         <Route exact path="/gins" component={Gins} />
         <Route exact path="/vodka" component={Vodka} />
         <Route exact path="/non_alcoholic" component={Non_alcoholic} />
         <Route exact path="/rum" component={Rum} />
 
         <Route path="/gins/:id" component={Drink} />
-
-        
+        <Route path="/vodka/:id" component={Drink} />
+        <Route path="/rum/:id" component={Drink} />
+        <Route path="/non_alcoholic/:id" component={Drink} />
 
 
       </Switch>
 
-        {/* <Header />
+      {/* <Header />
         <Main />
         <Footer /> */}
 
 
-      
+
 
 
     </div >

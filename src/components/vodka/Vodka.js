@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import "../grid/grid.css";
+
 
 const Vodka = () => {
 
@@ -10,7 +12,7 @@ const Vodka = () => {
     const [items, setItems] = useState([]);
 
     const fetchItems = async () => {
-        const data = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=vodka");
+        const data = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka");
         const items = await data.json();
         setItems(items.drinks)
         console.log(items);
@@ -21,16 +23,19 @@ const Vodka = () => {
     }
 
     return (
-        <section>
+        <section className="grid_main_cards">
             {items.map(item => (
-                <section>
+                <section className="grid_main_card_placeholder">
                     <img src={item.strDrinkThumb} alt="" />
+
+                    <div className="grid_main_card_description">
                     <h1>{item.strDrink}</h1>
                     <h2>key - {item.idDrink}</h2>
 
-                    <Link style={{ color: "white" }} to={`/allbiers/${item.idDrink}`}>
+                    <Link style={{ color: "white" }} to={`/vodka/${item.idDrink}`}>
                         <h3 >see Details</h3>
                     </Link>
+                    </div>
 
                 </section>
             ))}

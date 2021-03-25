@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import "../grid/grid.css";
+
 
 const Non_alcoholic = () => {
 
@@ -21,16 +23,19 @@ const Non_alcoholic = () => {
     }
 
     return (
-        <section>
+        <section className="grid_main_cards">
             {items.map(item => (
-                <section>
+                <section className="grid_main_card_placeholder">
                     <img src={item.strDrinkThumb} alt="" />
+
+                    <div className="grid_main_card_description">
                     <h1>{item.strDrink}</h1>
                     <h2>key - {item.idDrink}</h2>
 
-                    <Link style={{ color: "white" }} to={`/allbiers/${item.idDrink}`}>
+                    <Link style={{ color: "white" }} to={`/non_alcoholic/${item.idDrink}`}>
                         <h3 >see Details</h3>
                     </Link>
+                    </div>
 
                 </section>
             ))}
