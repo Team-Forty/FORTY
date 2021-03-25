@@ -1,0 +1,26 @@
+body{
+    background: #000;
+}
+
+.drink_card_big{
+    padding: 2%;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 200px;
+    border: 2px solid pink;
+    display:flex;
+    justify-content: center;
+    img{
+        width: 50%;
+    }
+    .drink_card_description{
+        padding-left: 5%;
+        .drink_card_ingredients{
+            padding-top: 5%;
+            text-align: left;
+            p{
+                padding-top: 5px;
+            }
+        }
+    }
+}

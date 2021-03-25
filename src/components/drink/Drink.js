@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Drink.css';
+import './drink.css';
 
 // import Header from "./Header";
 
@@ -24,30 +24,31 @@ const Drink = ({ match }) => {
         setItem(item.drinks[0])
     }
     return (
-        <div>
-
-            <section className="item_detail">
-                <h2>{item.strDrink}</h2>
-                <img id="drink_img" src={item.strDrinkThumb} alt="" />
-
-                <section>
-                    <h3>{item.strIngredient1}  {item.strMeasure1}</h3>
-                    <h3>{item.strIngredient2}  {item.strMeasure2}</h3>
-                    <h3>{item.strIngredient3}  {item.strMeasure3}</h3>
-                    <h3>{item.strIngredient4}  {item.strMeasure4}</h3>
-                    <h3>{item.strIngredient5}  {item.strMeasure5}</h3>
-                    <h3>{item.strIngredient6}  {item.strMeasure6}</h3>
-                    <h3>{item.strIngredient7}  {item.strMeasure7}</h3>
-                    <h3>{item.strIngredient8}  {item.strMeasure8}</h3>
-                    <h3>{item.strIngredient9}  {item.strMeasure9}</h3>
-                    <h3>{item.strIngredient10}  {item.strMeasure10}</h3>
-                </section>
-
-
-            </section>
-
-
-        </div>
+        
+        <section className="drink_card_big">
+            <img src={item.strDrinkThumb} alt=""/>
+                <div className="drink_card_description">
+                    <h1>{item.strDrink}</h1>
+                        <div className="drink_card_ingredients">
+                            <p>{item.strMeasure1} {item.strIngredient1}</p>
+                            <p>{item.strMeasure2} {item.strIngredient2}</p>
+                            <p>{item.strMeasure3} {item.strIngredient3}</p>
+                            <p>{item.strMeasure4} {item.strIngredient4}</p>
+                            <p>{item.strMeasure5} {item.strIngredient5}</p>
+                            <p>{item.strMeasure6} {item.strIngredient6}</p>
+                            <p>{item.strMeasure7} {item.strIngredient7}</p>
+                            <p>{item.strMeasure8} {item.strIngredient8}</p>
+                            <p>{item.strMeasure9} {item.strIngredient9}</p>
+                            <p>{item.strMeasure10} {item.strIngredient10}</p>
+                            <p>{item.strMeasure11} {item.strIngredient11}</p>
+                            <p>{item.strMeasure12} {item.strIngredient12}</p>
+                            <p>{item.strMeasure13} {item.strIngredient13}</p>
+                            <p>{item.strMeasure14} {item.strIngredient14}</p>
+                            <p>{item.strMeasure15} {item.strIngredient15}</p>
+                        </div>
+                </div> 
+        </section>
+        
     );
 }
 
