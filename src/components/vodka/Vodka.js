@@ -25,7 +25,7 @@ const Vodka = () => {
     return (
         <section className="grid_main_cards">
             {items.map((item, i) => (
-                <Link key={i} style={{ color: "white" , textDecoration: "none"}} to={`/gin/${item.idDrink}`}>
+                <Link key={i} style={{ color: "white" , textDecoration: "none"}} to={`/vodka/${item.idDrink}`}>
                     <div className="grid_main_card_placeholder">
                         <img src={item.strDrinkThumb} alt="" />
                             <div className="grid_main_card_description">

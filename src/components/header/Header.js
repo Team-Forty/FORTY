@@ -11,19 +11,19 @@ const Header = () => {
             <div className="header_menu">
 
                 
-                <Link to = {"/"}>
+                <Link style =  {{color:"white", textDecoration:"none"}} to = {"/"}>
                 <h1>FORTY</h1>
                 </Link>
                 
 
-                <div className="header_menu_wrapper">
+                {/* <div className="header_menu_wrapper">
                     <p>MENU</p>
                     <div className="header_menu_hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                </div>
+                </div> */}
             </div>
             <img src={HeaderImg} alt="" />
             <p>Home Of Fine Drinking</p>
