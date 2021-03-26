@@ -185,32 +185,32 @@ body{
                 .main_link_oben2{
                     @include mobile_box_two;
                 }
-                .main_flex_action{
-                    display: flex;
-                    justify-content: center;
-                    padding: 8% 0px;
-                    button{
-                        padding: 10px 25px;
-                        margin: 10% 0px;
-                        border: none;
-                        border-radius: 15px;
-                        outline: none;
-                        background: pink;
-                        border-bottom: 1px solid #fff;
-                        a{
-                            color: #fff;
-                            font-size: 18px;
-                            font-family: "Montserrat";
-                            text-decoration: none;
-                        }
-                    } 
-                }
                 .main_link_unten1{
                     @include mobile_box_two;
                 }
                 .main_link_unten2{
                     @include mobile_box_one;
                 }
+            }
+            .main_flex_action{
+                display: flex;
+                justify-content: center;
+                padding: 8% 0px;
+                button{
+                    padding: 10px 25px;
+                    margin: 10% 0px;
+                    border: none;
+                    border-radius: 15px;
+                    outline: none;
+                    background: pink;
+                    border-bottom: 1px solid #fff;
+                    a{
+                        color: #fff;
+                        font-size: 18px;
+                        font-family: "Montserrat";
+                        text-decoration: none;
+                    }
+                } 
             }     
         }
         .main_article{
