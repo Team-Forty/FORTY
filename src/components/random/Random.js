@@ -10,7 +10,6 @@ const Random = () => {
     }, [])
 
     const [item, setItem] = useState({});
-    let [ingCounter, setIngridient] = useState(1);
 
     const fetchItem = async () => {
         const fetchItem = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
@@ -20,34 +19,9 @@ const Random = () => {
         setItem(item.drinks[0])
     }
 
-    const drawIngridients = () => {
-        let strIngredient = "strIngredient" + ingCounter
-        console.log(strIngredient);
 
-        // if (strIngredient!= null) {
-        //     console.log(strIngredient);
-            
-        //     // setIngridient(ingCounter++)
-        // }
-    }
 
-    for (let i = 1; i<=15;i++ ){
-        let strIngredient = "strIngredient" + i;
-        console.log(strIngredient);
-        console.log(`item.drinks[0].${strIngredient}`);
 
-        let myLinik = `item.drinks[0].${strIngredient}`
-        console.log(myLinik);
-
-        // if(item.drinks.strIngredient != null) {
-        //     counter ++;
-            
-        // }
-        // console.log("counter - " + counter);
-
-    }
-
-    drawIngridients()
 
 
     return (
