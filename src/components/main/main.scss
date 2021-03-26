@@ -4,6 +4,55 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@mixin AchorTag_Desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+@mixin AchorTag_p_Desktop{
+    display:block;
+    margin: 0 auto;
+    font-size: 36px;
+}
+
+@mixin Grid_width_Desktop {
+    width: 50%;
+}
+
+@mixin mobile_box_one{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+        a{
+            flex-direction: column-reverse;
+            img{
+                width: 100%;
+            }
+            p{
+                padding: 10% 0px 5% 0px;
+            }
+        }
+}
+
+@mixin mobile_box_two{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+    a{
+        display: block;
+        img{
+            width: 100%;
+        }
+        p{
+            padding: 10% 0px 5% 0px;
+        }
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -29,110 +78,93 @@ body{
         .main_flex_link{
             display: flex;
             justify-content: space-between;
+            .main_link_oben1{
+                @include Grid_width_Desktop;
+                a{
+                    @include AchorTag_Desktop;
+                    img{
+                        @include Grid_width_Desktop;
+                    }
+                    p{
+                       @include AchorTag_p_Desktop;
+                    }
+                }
+                
+            }
+            .main_link_oben2{
+                @include Grid_width_Desktop;
+                a{
+                    @include AchorTag_Desktop;
+                    img{
+                        @include Grid_width_Desktop;
+                    }
+                    p{
+                        @include AchorTag_p_Desktop;
+                    }
+                }
+                
+            }
+        
+            .main_link_unten1{
+                @include Grid_width_Desktop;
+                a{
+                    @include AchorTag_Desktop;
+                }
+                img{
+                    @include Grid_width_Desktop;
+                }
+                p{
+                    @include AchorTag_p_Desktop;
+                }
+            }
+            .main_link_unten2{
+                @include Grid_width_Desktop;
+                a{
+                    @include AchorTag_Desktop;
+                }
+                img{
+                    @include Grid_width_Desktop;
+                }
+                p{
+                    @include AchorTag_p_Desktop;
+                }
+            }
         }
+        .main_flex_action{
+            display: flex;
+            justify-content: center;
+            padding: 8% 0px;
+            button{
+                padding: 10px 25px;
+                margin: 5% 0px;
+                border: none;
+                border-radius: 15px;
+                outline: none;
+                background: pink;
+                border-bottom: 1px solid #fff;
+                a{
+                    color: #fff;
+                    font-size: 40px;
+                    font-family: "Montserrat";
+                    text-decoration: none;
+                }
+            } 
+        }
+        .main_article{
+            text-align: left;
+            padding: 8% 0px;
+            p:first-child {
+                font-size: 40px;
+            }
+            p:last-child{
+                @include Grid_width_Desktop;
+                padding: 2% 0px;
+            }
+        }
+        
     }
-    .main_article{
-        text-align: left;
-        padding: 8% 0px;
-        p:first-child {
-            font-size: 40px;
-        }
-        p:last-child{
-            width:50%;
-            padding: 2% 0px;
-        }
-    }
+    
 
-}
-.main_link_oben1{
-    width:50%;
-    a{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-        img{
-            width: 50%;
-        }
-        p{
-            display:block;
-            margin: 0 auto;
-            font-size: 36px;
-        }
-    }
-    
-}
-.main_link_oben2{
-    width: 50%;
-    a{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-        img{
-            width: 50%;
-        }
-        p{
-            display:block;
-            margin: 0 auto;
-            font-size: 36px;
-        }
-    }
-    
-}
-.main_link_unten1{
-    width: 50%;
-    a{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-    }
-    img{
-        width:50%;
-    }
-    p{
-        display:block;
-        margin: 0 auto;
-        font-size: 36px;
-    }
-}
-.main_link_unten2{
-    width: 50%;
-    a{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-    }
-    img{
-        width:50%;
-    }
-    p{
-        display:block;
-        margin: 0 auto;
-        font-size: 36px;
-    }
-}
-
-.main_flex_action{
-    display: flex;
-    justify-content: center;
-    padding: 8% 0px;
-    button{
-        padding: 10px 25px;
-        border: none;
-        border-radius: 15px;
-        outline: none;
-        background: pink;
-        color: #fff;
-        font-size: 18px;
-        font-family: "Montserrat";
-    }
-    div{
-        margin-left: 15%;
-    }
-    
 }
 
 /*================================
@@ -148,74 +180,41 @@ body{
             .main_flex_link{
                 display:block;
                 .main_link_oben1{
-                    width: 100%;
-                    margin: auto;
-                    padding-bottom: 10%;
-                    border-bottom: 1px solid #fff;
-                    a{
-                        flex-direction: column-reverse;
-                        img{
-                            width: 100%;
-                        }
-                        p{
-                            padding: 10% 0px 5% 0px;
-                        }
-                    }
+                    @include mobile_box_one;
                 }
                 .main_link_oben2{
-                    width: 100%;
-                    margin: auto;
-                    padding-bottom: 10%;
-                    border-bottom: 1px solid #fff;
-                    a{
-                        display: block;
-                        img{
-                            width: 100%;
+                    @include mobile_box_two;
+                }
+                .main_flex_action{
+                    display: flex;
+                    justify-content: center;
+                    padding: 8% 0px;
+                    button{
+                        padding: 10px 25px;
+                        margin: 10% 0px;
+                        border: none;
+                        border-radius: 15px;
+                        outline: none;
+                        background: pink;
+                        border-bottom: 1px solid #fff;
+                        a{
+                            color: #fff;
+                            font-size: 18px;
+                            font-family: "Montserrat";
+                            text-decoration: none;
                         }
-                        p{
-                            padding: 10% 0px 5% 0px;
-                        }
-                    }
+                    } 
                 }
                 .main_link_unten1{
-                    width: 100%;
-                    margin: auto;
-                    padding-bottom: 10%;
-                    border-bottom: 1px solid #fff;
-                    a{
-                        display:block;
-                        img{
-                            width: 100%;
-                        }
-                        p{
-                            padding: 10% 0px 5% 0px;
-                        }
-                    }
+                    @include mobile_box_two;
                 }
                 .main_link_unten2{
-                    width: 100%;
-                    margin: auto;
-                    padding-bottom: 10%;
-                    border-bottom: 1px solid #fff;
-                    a{
-                        flex-direction: column-reverse;
-                        img{
-                            width: 100%;
-                        }
-                        p{
-                            padding: 10% 0px 5% 0px;
-                        }
-                    }
+                    @include mobile_box_one;
                 }
             }     
         }
         .main_article{
-            p:first-child{
-                font-size: 20px;
-            }
-            p:last-child{
-                font-size: 12px;
-            }
+            display: none;
         }
     }
 }
