@@ -165,26 +165,6 @@ body {
   .main .main_flex .main_flex_link .main_link_oben2 a p {
     padding: 10% 0px 5% 0px;
   }
-  .main .main_flex .main_flex_link .main_flex_action {
-    display: flex;
-    justify-content: center;
-    padding: 8% 0px;
-  }
-  .main .main_flex .main_flex_link .main_flex_action button {
-    padding: 10px 25px;
-    margin: 10% 0px;
-    border: none;
-    border-radius: 15px;
-    outline: none;
-    background: pink;
-    border-bottom: 1px solid #fff;
-  }
-  .main .main_flex .main_flex_link .main_flex_action button a {
-    color: #fff;
-    font-size: 18px;
-    font-family: "Montserrat";
-    text-decoration: none;
-  }
   .main .main_flex .main_flex_link .main_link_unten1 {
     width: 100%;
     margin: auto;
@@ -214,6 +194,26 @@ body {
   }
   .main .main_flex .main_flex_link .main_link_unten2 a p {
     padding: 10% 0px 5% 0px;
+  }
+  .main .main_flex .main_flex_action {
+    display: flex;
+    justify-content: center;
+    padding: 8% 0px;
+  }
+  .main .main_flex .main_flex_action button {
+    padding: 10px 25px;
+    margin: 10% 0px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    background: pink;
+    border-bottom: 1px solid #fff;
+  }
+  .main .main_flex .main_flex_action button a {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat";
+    text-decoration: none;
   }
   .main .main_article {
     display: none;
