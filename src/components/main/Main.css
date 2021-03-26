@@ -128,4 +128,82 @@ body {
   margin-left: 15%;
 }
 
+/*================================
+            Media-Styles
+=================================*/
+@media only screen and (max-width: 375px) {
+  .main h4 {
+    display: none;
+  }
+  .main .main_flex .main_flex_link {
+    display: block;
+  }
+  .main .main_flex .main_flex_link .main_link_oben1 {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+  }
+  .main .main_flex .main_flex_link .main_link_oben1 a {
+    flex-direction: column-reverse;
+  }
+  .main .main_flex .main_flex_link .main_link_oben1 a img {
+    width: 100%;
+  }
+  .main .main_flex .main_flex_link .main_link_oben1 a p {
+    padding: 10% 0px 5% 0px;
+  }
+  .main .main_flex .main_flex_link .main_link_oben2 {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+  }
+  .main .main_flex .main_flex_link .main_link_oben2 a {
+    display: block;
+  }
+  .main .main_flex .main_flex_link .main_link_oben2 a img {
+    width: 100%;
+  }
+  .main .main_flex .main_flex_link .main_link_oben2 a p {
+    padding: 10% 0px 5% 0px;
+  }
+  .main .main_flex .main_flex_link .main_link_unten1 {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+  }
+  .main .main_flex .main_flex_link .main_link_unten1 a {
+    display: block;
+  }
+  .main .main_flex .main_flex_link .main_link_unten1 a img {
+    width: 100%;
+  }
+  .main .main_flex .main_flex_link .main_link_unten1 a p {
+    padding: 10% 0px 5% 0px;
+  }
+  .main .main_flex .main_flex_link .main_link_unten2 {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+  }
+  .main .main_flex .main_flex_link .main_link_unten2 a {
+    flex-direction: column-reverse;
+  }
+  .main .main_flex .main_flex_link .main_link_unten2 a img {
+    width: 100%;
+  }
+  .main .main_flex .main_flex_link .main_link_unten2 a p {
+    padding: 10% 0px 5% 0px;
+  }
+  .main .main_article p:first-child {
+    font-size: 20px;
+  }
+  .main .main_article p:last-child {
+    font-size: 12px;
+  }
+}
+
 /*# sourceMappingURL=Main.css.map */

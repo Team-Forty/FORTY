@@ -16,7 +16,6 @@ const Footer = () => {
                 <img src={Twitter} alt="" />
                 <img src={Facebook} alt="" />
             </div>
-
         </section>
     );
 }

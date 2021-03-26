@@ -60,3 +60,26 @@ body{
         letter-spacing:2.5px;
     }
 }
+
+/*================================
+            Media-Styles
+=================================*/
+
+@media only screen and (max-width: 375px) {
+    .header{
+        p:last-child {
+            padding: 15% 0px 10% 0px;
+            font-size: 20px;
+        }
+        .header_menu{
+            h1{
+                font-size: 28px;
+            }
+        }
+    }
+    .header_menu_wrapper{
+        p:first-child{
+            display:none;
+        }
+    }
+}
