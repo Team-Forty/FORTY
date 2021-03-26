@@ -49,22 +49,24 @@ const Main = () => {
 
 
                 <div className="main_flex_action">
-                    <button>Can we inspire you?</button>
 
-                    <Link  to="/random">
+
+                    <button>
+                    <Link style = {linkStyle} to="/random">
                         <div className="main_link">
                             <h1 style={{ color: "white" }}>Can we inspire you?</h1>
                         </div>
                     </Link>
+                    </button>
 
-                    <div>
+                    {/* <div>
                         <Search/>
-                    </div>
+                    </div> */}
 
-                    <div>
+                    {/* <div>
                         <input type="text" />
                         <button>Search your favorite</button>
-                    </div>
+                    </div> */}
                 </div>
 
 

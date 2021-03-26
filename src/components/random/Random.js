@@ -75,6 +75,7 @@ const Random = () => {
                             <p>{item.strMeasure13} {item.strIngredient13}</p>
                             <p>{item.strMeasure14} {item.strIngredient14}</p>
                             <p>{item.strMeasure15} {item.strIngredient15}</p>
+                            <p>{item.strInstructionsDE}</p>
                         </div>
                 </div> 
         </section>

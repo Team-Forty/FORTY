@@ -83,7 +83,7 @@ const Search = () => {
                 {items
                     ? items.map((item, i) => (
 
-                        <Link key={i} style={{ color: "white", textDecoration: "none" }} to={`/gins/${item.idDrink}`}>
+                        <Link key={i} style={{ color: "white", textDecoration: "none" }} to={`/search/${item.idDrink}`}>
                             <div className="grid_main_card_placeholder">
                                 <img src={item.strDrinkThumb} alt="" />
                                 <div className="grid_main_card_description">
