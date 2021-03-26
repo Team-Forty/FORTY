@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../drink/drink.css';
-import { Link } from 'react-router-dom';
 
 
 
@@ -18,7 +17,6 @@ const Random = () => {
         const item = await fetchItem.json();
         console.log(item.drinks);
         console.log(item.drinks[0].idDrink);
-        console.log(item.drinks[0].strIngredient1);
         setItem(item.drinks[0])
     }
 
@@ -34,7 +32,6 @@ const Random = () => {
     }
 
     for (let i = 1; i<=15;i++ ){
-        let counter = 0;
         let strIngredient = "strIngredient" + i;
         console.log(strIngredient);
         console.log(`item.drinks[0].${strIngredient}`);

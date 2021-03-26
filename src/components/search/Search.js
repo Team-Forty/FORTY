@@ -10,7 +10,7 @@ const Search = () => {
 
     useEffect(() => {
         fetchItems();
-    }, [])
+    })
 
     const [output, setOutput] = useState("")
     const [items, setItems] = useState([]);

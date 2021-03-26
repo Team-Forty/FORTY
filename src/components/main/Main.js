@@ -7,18 +7,11 @@ import RumImg from '../data/img/melissa-walker-horn-gtDYwUIr9Vg-unsplash 1.png'
 
 //! changes imports:
 import { Link } from 'react-router-dom';
-import Search from '../search/Search';
 
 
 
 const Main = () => {
 
-    const linkStyle = {
-        textDecoration: "inherit", 
-        width: "100%",
-        color: "white",
-        margin: "auto"
-    }
 
     return (
         <section className="main">
