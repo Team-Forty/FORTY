@@ -149,22 +149,19 @@ body{
                     text-decoration: none;
                 }
             } 
-        }
-        .main_article{
-            text-align: left;
-            padding: 8% 0px;
-            p:first-child {
-                font-size: 40px;
-            }
-            p:last-child{
-                @include Grid_width_Desktop;
-                padding: 2% 0px;
-            }
-        }
-        
+        }    
     }
-    
-
+    .main_article{
+        text-align: left;
+        padding: 8% 0px;
+        p:first-child {
+            font-size: 40px;
+        }
+        p:last-child{
+            @include Grid_width_Desktop;
+            padding: 2% 0px;
+        }
+    }
 }
 
 /*================================

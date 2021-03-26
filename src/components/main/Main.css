@@ -113,14 +113,14 @@ body {
   font-family: "Montserrat";
   text-decoration: none;
 }
-.main .main_flex .main_article {
+.main .main_article {
   text-align: left;
   padding: 8% 0px;
 }
-.main .main_flex .main_article p:first-child {
+.main .main_article p:first-child {
   font-size: 40px;
 }
-.main .main_flex .main_article p:last-child {
+.main .main_article p:last-child {
   width: 50%;
   padding: 2% 0px;
 }
