@@ -16,79 +16,51 @@ const Main = () => {
     const linkStyle = {
         textDecoration: "inherit", 
         width: "100%",
-        color: "white"
+        color: "white",
+        margin: "auto"
     }
 
     return (
         <section className="main">
             <h4>Choose your favorite spirit:</h4>
             <div className="main_flex">
-
-
-
                 <div className="main_flex_link">
-
-
-
                     <div className="main_link_oben1" >
                         <Link to="/gins" ><img src={GinImg} alt="" />
                             <p className="main_link_p">GIN</p></Link>
                     </div>
-
-
-
-
                     <div className="main_link_oben2">
                         <Link to="/vodka"><p className="main_link_p">VODKA</p>
                             <img src={VodkaImg} alt="" /></Link>
                     </div>
-
-
                 </div>
-
-
-
                 <div className="main_flex_action">
-                    <button>Can we inspire you?</button>
-
-                    <Link  to="/random">
-                        <div className="main_link">
-                            <h1 style={{ color: "white" }}>Can we inspire you?</h1>
-                        </div>
-                    </Link>
-
-                    <div>
+                    <button>
+                        <Link to="/random">
+                            <p>Can we inspire you?</p>
+                        </Link>
+                    </button>
+                    {/* <div>
                         <Search/>
                     </div>
 
                     <div>
                         <input type="text" />
                         <button>Search your favorite</button>
-                    </div>
-                </div>
-
-
-
+                    </div>*/}
+                </div> 
                 <div className="main_flex_link">
-
-
                     <div className="main_link_unten1">
                         <Link to="/non_alcoholic">
                             <p className="main_link_p">NON-ALCOHOLIC</p>
                             <img src={NoAlcImg} alt="" /></Link>
                     </div>
-
-
-
-
-
                     <div className="main_link_unten2">
                         <Link to="/rum">
                             <img src={RumImg} alt="" />
                             <p className="main_link_p">RUM</p>
                         </Link>
                     </div>
-
                 </div>
             </div>
             <article className="main_article">
