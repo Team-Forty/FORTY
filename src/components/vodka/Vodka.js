@@ -24,20 +24,15 @@ const Vodka = () => {
 
     return (
         <section className="grid_main_cards">
-            {items.map(item => (
-                <section className="grid_main_card_placeholder">
-                    <img src={item.strDrinkThumb} alt="" />
-
-                    <div className="grid_main_card_description">
-                    <h1>{item.strDrink}</h1>
-                    <h2>key - {item.idDrink}</h2>
-
-                    <Link style={{ color: "white" }} to={`/vodka/${item.idDrink}`}>
-                        <h3 >see Details</h3>
-                    </Link>
+            {items.map((item, i) => (
+                <Link key={i} style={{ color: "white" , textDecoration: "none"}} to={`/gins/${item.idDrink}`}>
+                    <div className="grid_main_card_placeholder">
+                        <img src={item.strDrinkThumb} alt="" />
+                            <div className="grid_main_card_description">
+                                <h3>{item.strDrink}</h3>
+                            </div>
                     </div>
-
-                </section>
+                </Link>
             ))}
         </section>
 

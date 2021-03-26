@@ -10,6 +10,7 @@ import Vodka from './components/vodka/Vodka';
 import Non_alcoholic from './components/non_alcoholic/Non_alcoholic';
 import Rum from './components/rum/Rum';
 import Drink from './components/drink/Drink';
+import Random from './components/random/Random';
 
 // ! changes to Links  overwirking completely the body of App
 
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/vodka" component={Vodka} />
         <Route exact path="/non_alcoholic" component={Non_alcoholic} />
         <Route exact path="/rum" component={Rum} />
+        <Route exact path="/random" component={Random} />
 
         <Route path="/gins/:id" component={Drink} />
         <Route path="/vodka/:id" component={Drink} />
