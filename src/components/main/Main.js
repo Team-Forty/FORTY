@@ -1,9 +1,9 @@
 import React from 'react';
 import "./Main.css";
-import GinImg from '../data/img/jez-timms-J7J0oTps4Lo-unsplash.jpg'
-import VodkaImg from '../data/img/mae-mu-T7heq8rawkc-unsplash.jpg'
-import NoAlcImg from '../data/img/nikita-tikhomirov-roMo1sOj8q8-unsplash.jpg'
-import RumImg from '../data/img/melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg'
+import GinImg from '../data/img/jez-timms-J7J0oTps4Lo-unsplash 2.png'
+import VodkaImg from '../data/img/mae-mu-T7heq8rawkc-unsplash 4.png'
+import NoAlcImg from '../data/img/nikita-tikhomirov-roMo1sOj8q8-unsplash 2.png'
+import RumImg from '../data/img/melissa-walker-horn-gtDYwUIr9Vg-unsplash 1.png'
 
 //! changes imports:
 import { Link } from 'react-router-dom';
@@ -13,52 +13,69 @@ import { Link } from 'react-router-dom';
 const Main = () => {
     return (
         <section className="main">
-            <h1>Choose your favorite spirit:</h1>
-            <div className="main_grid">
+            <h4>Choose your favorite spirit:</h4>
+            <div className="main_flex">
 
-                <Link to="/gins" >
-                    <div className="main_link" >
-                        <img src={GinImg} alt="" />
-                        <h1>GIN</h1>
+
+
+                <div className="main_flex_link">
+
+
+                    
+                        <div className="main_link_oben1" >
+                            <Link  to="/gins" ><img src={GinImg} alt="" />
+                            <p className="main_link_p">GIN</p></Link>
+                        </div>
+                    
+                        
+
+
+                        <div className="main_link_oben2">
+                        <Link to="/vodka"><p className="main_link_p">VODKA</p>
+                            <img src={VodkaImg} alt="" /></Link>
+                        </div>
+                    
+        
+                </div>
+
+
+
+                    <div className="main_flex_action">
+                        <button>Can we inspire you?</button>
+                            <div>
+                                <input type="text" />
+                                <button>Search your favorite</button>
+                            </div>
                     </div>
-                </Link>
-
-                <Link to="/vodka">
-                    <div className="main_link">
-                        <h1>VODKA</h1>
-                        <img src={VodkaImg} alt="" />
-                    </div>
-                </Link>
-
-                <h1>Can we inspire you?</h1>
-                <form action="">
-                    <input type="text" />
-                    <br></br>
-                    <br></br>
-                    <label htmlFor="">Search your favorite</label>
-                </form>
-                <Link to="/non_alcoholic">
-                    <div className="main_link">
-                        <h1>NON-<br></br>ALCOHOLIC</h1>
-                        <img src={NoAlcImg} alt="" />
-                    </div>
-                </Link>
-                <Link to="/rum">
-                    <div className="main_link">
-                        <img src={RumImg} alt="" />
-                        <h1>RUM</h1>
-                    </div>
-                </Link>
 
 
 
+                <div className="main_flex_link">
+
+                        
+                            <div className="main_link_unten1">
+                            <Link to="/non_alcoholic">
+                                <p className="main_link_p">NON-ALCOHOLIC</p>
+                                <img src={NoAlcImg} alt="" /></Link>
+                            </div>
+                        
+                    
 
 
+                        
+                            <div className="main_link_unten2">
+                            <Link to="/rum">
+                                <img src={RumImg} alt=""/>
+                                <p className="main_link_p">RUM</p>
+                                </Link>
+                            </div>
+                        
+                </div>
             </div>
-            <article className="main_article">
-                <h2>Genuss hat viele Facetten <span></span></h2>
-                <p>aber ohne das richtige Maß geht es nicht!<br></br>Cocktails kann man mit allen Sinnen genießen. Zum Cocktail-Genuss<br></br>gehören neben dem Geschmack natürlich auch die Optik, die Farbe und<br></br>die verschiedenen Aromen, die im Zusammenspiel ganz neue<br></br>Assoziationen wecken und unterbewusst auch den Geschmack<br></br>beeinflussen.</p>
-            </article>
+                <article className="main_article">
+                    <p>Genuss hat viele Facetten</p>
+                    <p>aber ohne das richtige Maß geht es nicht! Cocktails kann man mit allen Sinnen genießen. Zum Cocktail-Genussgehören neben dem Geschmack natürlich auch die Optik, die Farbe und die verschiedenen Aromen, die im Zusammenspiel ganz neue Assoziationen wecken und unterbewusst auch den Geschmack beeinflussen.</p>
+                </article>
         </section>
     );
 }
